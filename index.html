@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💖</title>
+  <link rel="icon" type="image/x-icon" href="img/1 (12).jpg">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(#f8d7e5, #ffe6f0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    input {
+      margin: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <h2>Hi love! 💘 Please enter your name & birthday</h2>
+  <input type="text" id="name" placeholder="Your name">
+  <input type="password" id="pass" placeholder="Birthday (ddmmyyyy)">
+  <button onclick="login()">Enter</button>
+
+  <script>
+    function login() {
+      const name = document.getElementById('name').value.toLowerCase();
+      const pass = document.getElementById('pass').value;
+
+      // Customize this with her name and birthday
+      if (name === 'tingting' && pass === '21032003') {
+        window.location.href = 'main.html';
+      } else {
+        alert("Oops! Wrong name or birthday 💔");
+      }
+    }
+  </script>
+</body>
+</html>
